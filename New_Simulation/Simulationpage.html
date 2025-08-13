@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment Projection</title>
+    <link rel="stylesheet" href="simulation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+  <body>
+    <div class="Page-container">
+      <div class="Navigation">
+        <div class="left-nav">
+          <img src="../Icons/Logo.svg" alt="" />
+        </div>
+
+        <div class="nav-links">
+          <div class="simulator">
+            <img src="../Icons/Simulator.svg" alt="" />
+            <a href="#">Simulator</a>
+          </div>
+
+          <div class="Market-snapshot">
+            <img src="../Icons/Market Snapshot.svg" alt="" />
+            <a href="#">Market Snapshot</a>
+          </div>
+
+          <div class="Smart-advise">
+            <img src="../Icons/Smart Advise.svg" alt="" />
+            <a href="#">Smart Advise</a>
+          </div>
+        </div>
+
+        <div class="right-nav">
+          <img src="../Icons/Question.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="top-layer">
+        <div class="simulator">
+          <div class="title">Simulator</div>
+          <div class="body">
+            Put in your financial credentials to see a projection of your
+            investments over a period of time.
+          </div>
+
+          <div class="form">
+            <label for="amount">Starting Amount</label>
+            <input type="text" id="amount" placeholder="Enter amount" />
+
+            <label for="Market">Select Market</label>
+            <select id="Market">
+              <option value="US">US Market</option>
+              <option value="EU">EU Market</option>
+              <option value="Asia">Asia Market</option>
+            </select>
+
+            <label for="duration">Select Duration</label>
+            <select id="duration">
+              <option value="1">1 Year</option>
+              <option value="3">3 Years</option>
+              <option value="5">5 Years</option>
+            </select>
+
+            <div class="contribution_duration">
+              <div class="contribution-block">
+                <label for="contribution">Contribution</label>
+                <input
+                  type="text"
+                  id="contribution"
+                  placeholder="Enter contribution"
+                />
+              </div>
+
+              <div class="frequency-block">
+                <label for="frequency">Frequency</label>
+                <select id="frequency">
+                  <option value="monthly">Monthly</option>
+                  <option value="quarterly">Quarterly</option>
+                  <option value="annually">Annually</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="Result">
+             <div class="title">Result</div>
+          <div class="body">
+            Put in your financial credentials to see a projection of your
+            investments over a period of time.
+   
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+  

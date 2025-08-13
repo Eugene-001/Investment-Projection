@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100 – 900;
+  font-style: normal;
+}
+
+.Navigation {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+  margin-top: 64px;
+  margin-bottom: 40px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #737eff;
+}
+
+.simulator,
+.Market-snapshot,
+.Smart-advise {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.Page-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.simulator {
+  display: block;
+}
+
+.form {
+  padding: 24px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #737eff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  background-color: white;
+  cursor: pointer;
+}
+
+.contribution_duration {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contribution-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.frequency-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.top-layer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.simulator {
+  width: 40%;
+}

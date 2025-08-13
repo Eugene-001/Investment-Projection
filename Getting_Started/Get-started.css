@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100 – 900;
+  font-style: normal;
+}
+
+.Navigation {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #737eff;
+}
+
+.simulator,
+.Market-snapshot,
+.Smart-advise {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.Page-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.Welcome-text {
+  margin-top: 12%;
+  text-align: center;
+}
+
+.maintext {
+  font-size: 48px;
+  font-weight: 200;
+  line-height: 56px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.supportingtext {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 56px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.option1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 14%;
+  margin-right: 14%;
+  padding: 24px 24px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  border: 1px solid #ecedff;
+  margin-bottom: 24px;
+}
