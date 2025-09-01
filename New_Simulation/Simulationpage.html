@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Investment Projection</title>
+    <title>Simulation Page</title>
     <link rel="stylesheet" href="simulation.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   </head>
   <body>
     <div class="Page-container">
@@ -85,14 +86,23 @@
         </div>
 
         <div class="Result">
-             <div class="title">Result</div>
+
+             <div class="title">
+              Result
+             </div>
+
           <div class="body">
             Put in your financial credentials to see a projection of your
             investments over a period of time.
-   
+          </div>
+
+          <div class="Chart" id="stacked-bar" style="width: 100%; height: 400px;">
+            <script src="stackedchart.js"></script>
+          </div>
         </div>
+             
       </div>
-    </div>
+
+      
   </body>
 </html>
-  
