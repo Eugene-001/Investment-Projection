@@ -149,3 +149,12 @@ label {
   color: #333;
   margin-bottom: 4px;
 }
+
+td {
+  text-align: center;
+  padding: 8px 16px;
+}
+
+.blue {
+  background-color: #f6f7ff;
+}
