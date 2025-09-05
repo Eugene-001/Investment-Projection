@@ -24,7 +24,7 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
 }
 
 a {
@@ -157,4 +157,18 @@ td {
 
 .blue {
   background-color: #f6f7ff;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table tr {
+  border: 1px solid #ddd;
+}
+
+table td,
+table th {
+  /* border: 1px solid #ddd; */
+  padding: 16px;
 }
