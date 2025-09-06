@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market Snapshot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="snapshot.css" />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <div
+        class="Navigation"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div class="left-nav">
+          <img src="../Icons/Logo.svg" alt="" />
+        </div>
+
+        <div
+          class="nav-links"
+          style="display: flex; align-items: center; gap: 16px"
+        >
+          <div
+            class="simulator"
+            style="display: flex"
+            onclick="window.location.href='../New_Simulation/Simulationpage.html'"
+          >
+            <img src="../Icons/Simulator.svg" alt="" />
+            <a href="#">Simulator</a>
+          </div>
+
+          <div class="Market-snapshot">
+            <img src="../Icons/Market Snapshot.svg" alt="" />
+            <a href="#" style="white-space: nowrap">Market Snapshot</a>
+          </div>
+
+          <div class="Smart-advise">
+            <img src="../Icons/Smart Advise.svg" alt="" />
+            <a href="#" style="white-space: nowrap">Smart Advise</a>
+          </div>
+        </div>
+
+        <div class="right-nav">
+          <img src="../Icons/Question.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="top-section">
+        <div
+          class="top-for-titles"
+          style="display: flex; justify-content: space-between"
+        >
+          <div class="titles-area">
+            <div
+              class="snapshot-header"
+              style="font-size: 16px; font-weight: 600; margin-bottom: 8px"
+            >
+              Market Snapshot
+            </div>
+
+            <div class="snapshot-body" style="color: #333">
+              Put in your financial credentials to see a projection of your
+              investments over a period of time.
+            </div>
+          </div>
+
+          <div
+            class="filter-area"
+            style="display: flex; align-items: center; gap: 8px"
+          >
+            <div class="flag">
+              <img src="../Icons/US FLAG.svg" alt="" />
+            </div>
+            <div class="Country-text" style="display: flex; gap: 4px">
+              US Market <img src="../Icons/chev.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bars-and-indices"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+        "
+      >
+        <div class="bars-left" style="width: 60%">
+          <div
+            class="Chart"
+            id="stacked-bar"
+            style="
+              width: 100%;
+              height: 400px;
+              margin-top: 32px;
+              padding: 16px;
+              margin-bottom: 32px;
+              border: 1px solid #ddd;
+              border-radius: 12px;
+            "
+          >
+            <script src="marketcharts.js"></script>
+          </div>
+
+          <div
+            class="Chart"
+            id="stacked-bar-2"
+            style="
+              width: 100%;
+              height: 400px;
+              margin-top: 32px;
+              padding: 16px;
+              margin-bottom: 32px;
+              border: 1px solid #ddd;
+              border-radius: 12px;
+            "
+          >
+            <script src="marketcharts.js"></script>
+          </div>
+
+          <div class="bars-left-3">
+            <div
+              class="Chart"
+              id="stacked-bar-3"
+              style="
+                width: 100%;
+                height: 400px;
+                margin-top: 32px;
+                margin-bottom: 32px;
+                border: 1px solid #ddd;
+                border-radius: 12px;
+                padding: 16px;
+              "
+            >
+              <script src="marketcharts.js"></script>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="indices-right"
+          style="
+            width: 30%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 32px;
+            background-color: #fafafa;
+            font-size: 14px;
+          "
+        >
+          <div
+            class="indices-menu"
+            style="
+              display: flex;
+              flex-direction: row;
+              gap: 16px;
+              overflow-x: auto;
+              white-space: nowrap;
+              scrollbar-width: none;
+              color: #333;
+              font-size: 14px;
+              margin-bottom: 16px;
+            "
+          >
+            <div
+              class="indices-tab"
+              style="color: #505eff; text-decoration: underline"
+            >
+              Indices
+            </div>
+
+            <div class="stocks-tab">Stocks</div>
+
+            <div class="real-estates-tab">Real Estates</div>
+
+            <div class="minerals-tab">Minerals</div>
+
+            <div class="ETS-tab">ETS</div>
+
+            <div class="MF-tab">Mutual Funds</div>
+          </div>
+
+          <div
+            class="Displayed-index-value"
+            style="display: flex; flex-direction: column; gap: 16px"
+          >
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+
+            <div
+              class="value-displayed"
+              style="
+                display: flex;
+                padding: 12px;
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 8px;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="value-left" style="display: flex; gap: 12px">
+                <div class="vflag">
+                  <img src="../Icons/US FLAG.svg" alt="" />
+                </div>
+                <div class="vtext">
+                  <div
+                    class="vtext-tile"
+                    style="font-weight: 600; margin-bottom: 4px"
+                  >
+                    Dow and Jones
+                  </div>
+
+                  <div class="vtext-body" style="color: #05a354">+0.42%</div>
+                </div>
+              </div>
+
+              <div class="value-right" style="font-weight: 600">$272.42</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="marketcharts.js"></script>
+  </body>
+</html>

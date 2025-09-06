@@ -1,0 +1,39 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100- 900;
+  font-style: normal;
+}
+
+.Navigation {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+  margin-top: 64px;
+  margin-bottom: 40px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #737eff;
+}
+
+.simulator,
+.Market-snapshot,
+.Smart-advise {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.page-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
