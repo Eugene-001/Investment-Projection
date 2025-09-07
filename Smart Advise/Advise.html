@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market Snapshot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="Advise.css" />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <div
+        class="Navigation"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div class="left-nav">
+          <img src="../Icons/Logo.svg" alt="" />
+        </div>
+
+        <div
+          class="nav-links"
+          style="display: flex; align-items: center; gap: 16px"
+        >
+          <div
+            class="simulator"
+            style="display: flex"
+            onclick="window.location.href='../New_Simulation/Simulationpage.html'"
+          >
+            <img src="../Icons/Simulator.svg" alt="" />
+            <a href="#">Simulator</a>
+          </div>
+
+          <div class="Market-snapshot">
+            <img src="../Icons/Market Snapshot.svg" alt="" />
+            <a href="#" style="white-space: nowrap">Market Snapshot</a>
+          </div>
+
+          <div class="Smart-advise">
+            <img src="../Icons/Smart Advise.svg" alt="" />
+            <a href="#" style="white-space: nowrap">Smart Advise</a>
+          </div>
+        </div>
+
+        <div class="right-nav">
+          <img src="../Icons/Question.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="main-body" style="display: flex; gap: 24px; margin-top: 40px">
+        <div
+          class="leftside"
+          style="
+            border-right: 1px solid #ddd;
+            padding-right: 16px;
+            width: 20%;
+            height: 100vh;
+          "
+        >
+          <div
+            class="newchat-and-icon"
+            style="
+              display: flex;
+              gap: 8px;
+              align-items: center;
+              margin-bottom: 40px;
+              color: #333;
+            "
+          >
+            <div class="text">Start New Chat</div>
+
+            <div class="icon">
+              <img src="../Icons/Plus.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="Chat-history">
+            <div class="history-title" style="margin-bottom: 16px; color: #333">
+              Chat
+            </div>
+
+            <div
+              class="history-tabs"
+              style="display: flex; flex-direction: column; gap: 24px"
+            >
+              <div
+                class="tab1"
+                style="
+                  padding: 16px;
+                  background: #f6f7ff;
+                  color: #505eff;
+                  width: fit-content;
+                  border-radius: 4px;
+                "
+              >
+                500 a day for 50 years
+              </div>
+
+              <div class="tab2" style="color: #666; padding: 16px">
+                1k a month for 30 years
+              </div>
+
+              <div class="tab3" style="color: #666; padding: 16px">
+                200 a week for 40 years
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rightside" style="flex: 1">
+          <div
+            class="header-and-button"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+            "
+          >
+            <div
+              class="header-text"
+              style="font-size: 16px; font-weight: 600; color: #333"
+            >
+              Smart Advise
+            </div>
+
+            <div
+              class="button"
+              style="
+                display: flex;
+                flex-direction: row;
+                padding: 12px 20px;
+                background-color: #f6f7ff;
+                border-radius: 8px;
+                color: #505eff;
+                cursor: pointer;
+                align-items: center;
+                gap: 16px;
+              "
+            >
+              <div class="button-icon">
+                <img src="../Icons/Share.svg" alt="#" />
+              </div>
+              <div class="button-text">Share</div>
+            </div>
+          </div>
+
+          <div class="interactive-container">
+            <div
+              class="user-message"
+              style="
+                width: fit-content;
+                display: flex;
+                justify-content: flex-end;
+                padding: 16px;
+                background-color: #f6f7ff;
+                border-radius: 8px;
+                color: #505eff;
+                font-size: 16px;
+                font-weight: 500;
+                margin-left: auto;
+                margin-top: 10%;
+              "
+            >
+              How much monthly return can I get by investing 500 naira every dy
+              for 50 years?
+            </div>
+
+            <div
+              class="system-message"
+              style="
+                display: flex;
+                gap: 8px;
+                padding: 24px;
+                background-color: #fafafa;
+                border-radius: 8px;
+                margin-top: 32px;
+              "
+            >
+              <div class="system-text" style="line-height: 140%">
+                Actual monthly returns will vary depending on market trends,
+                interest rates, and portfolio changes. Kindly select which
+                portfolio you will prefer
+              </div>
+              <div class="system-icon">
+                <img src="../Icons/Copy.svg" alt="" />
+              </div>
+            </div>
+
+            <div
+              class="other-cards"
+              style="
+                display: flex;
+                flex-direction: row;
+                gap: 24px;
+                margin-top: 32px;
+              "
+            >
+              <div
+                class="card"
+                style="
+                  padding: 24px;
+                  background: #505eff;
+                  border-radius: 8px;
+                  color: #fff;
+                "
+              >
+                US Real Estate
+              </div>
+
+              <div
+                class="card"
+                style="padding: 24px; background: #f6f7ff; border-radius: 8px"
+              >
+                US Real Estate
+              </div>
+
+              <div
+                class="card"
+                style="padding: 24px; background: #f6f7ff; border-radius: 8px"
+              >
+                US Real Estate
+              </div>
+            </div>
+
+            <div
+              class="user-input"
+              style="display: flex; gap: 16px; margin-top: 140px"
+            >
+              <div
+                class="attach-icon"
+                style="
+                  padding: 20px;
+                  background-color: #f6f7ff;
+                  border-radius: 8px;
+                "
+              >
+                <img src="../Icons/Attach.svg" alt="" />
+              </div>
+
+              <div
+                class="input-field"
+                style="
+                  display: flex;
+                  align-items: center;
+                  padding: 8px 20px;
+                  background: #f6f7ff;
+                  border-radius: 8px;
+                  flex: 1;
+                  justify-content: space-between;
+                "
+              >
+                <div class="placeholder" style="color: #919191">
+                  Type your message here...
+                </div>
+
+                <div class="send">
+                  <img src="../Icons/Send.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
