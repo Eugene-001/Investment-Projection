@@ -96,10 +96,7 @@ a {
 }
 
 .nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
+  display: none;
 }
 
 .simulator,
